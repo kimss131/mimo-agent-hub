@@ -13,12 +13,17 @@ Multi-agent orchestration framework powered by **MiMo V2.5-Pro** for autonomous 
 
 ## Agents
 
-| Agent | Function | Token Usage |
-|-------|----------|-------------|
-| Code Review | PR analysis, security scan | ~15K/review |
-| Test Generator | Auto test suite creation | ~20K/suite |
-| Doc Generator | API docs, architecture | ~10K/doc |
-| Refactoring | Code smell detection | ~12K/analysis |
+- **Code Review** — PR analysis, security scan (~15K tokens/review)
+- **Test Generator** — Auto test suite creation (~20K tokens/suite)
+- **Doc Generator** — API docs, architecture (~10K tokens/doc)
+- **Refactoring** — Code smell detection (~12K tokens/analysis)
+
+## Performance
+
+- 92% bug detection accuracy
+- 85%+ test coverage generation
+- Async-first: 10 concurrent agents
+- Token-efficient prompting (50K tokens/review average)
 
 ## Quick Start
 
@@ -26,10 +31,3 @@ Multi-agent orchestration framework powered by **MiMo V2.5-Pro** for autonomous 
 pip install -r requirements.txt
 python -m agent_hub --config config.yaml
 ```
-
-## Performance
-
-- 92% bug detection accuracy
-- 85%+ test coverage generation
-- 50K tokens/review average
-- Async-first: 10 concurrent agents
